@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const Cards = () => {
   const [movies, setMovies] = useState([]);
 
@@ -19,9 +20,9 @@ const Cards = () => {
   }, []);
   return (
     <div>
-      <a href="" className="populer">
+      <Link to="/populer" className="populer">
         Populer
-      </a>
+      </Link>
       <div className="container">
         {movies?.results?.map((movie) => (
           <div key={movie.id} className="cards">

@@ -56,6 +56,32 @@ body {
   margin: 20px;
   padding: 10px;
 }
+.search {
+  background-color: white;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+}
+.search input {
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  font-size: medium;
+  font-weight: bolder;
+}
+.search input:focus {
+  outline: none;
+}
+.search p {
+  text-align: center;
+  background-color: white;
+}
+.search p:hover {
+  cursor: pointer;
+  background-color: grey;
+}
 @media screen and (max-width: 600px) {
   .carousel {
     width: 100vw;
