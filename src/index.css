@@ -6,6 +6,17 @@ body {
   color: white;
   font-family: poppins;
 }
+.results {
+  color: black;
+}
+.black-h100 {
+  background-color: black;
+  min-height: 100vh;
+}
+.bg-search {
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
   overflow-x: auto;
@@ -122,7 +133,6 @@ body {
   background-color: white;
   overflow-y: scroll;
   scrollbar-width: none;
-  float: left;
   width: 200px;
   margin-left: 20px;
 }

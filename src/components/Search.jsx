@@ -23,15 +23,24 @@ const Search = () => {
       .catch((err) => console.error(err));
   }, [search]);
   return (
-    <div>
+    <div className="bg-search">
       <div className="search">
         <input
           type="text"
           placeholder="Search"
+          value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         {movies?.results?.map((movie) => {
-          return <p key={movie.id}>{movie.name}</p>;
+          return (
+            <p
+              className="results"
+              onClick={(e) => setSearch(e.target.innerText)}
+              key={movie.id}
+            >
+              {movie.name}
+            </p>
+          );
         })}
       </div>
     </div>
